@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+    <img src="http://clipart-library.com/clipart/149336.htm" alt="Burger Image">
+    <h1>Eat-Da-Burger!</h1>
+  </div>
+  <div class="row">
+    <div class="col-5">
+      <h5>Burgers that are not Devoured</h5>
+      <ul>
+        {{#each burger}} {{#unless devoured}} {{burger.burger_name}} {{/unless}} {{/each}}
+      </ul>
+    </div>
+    <div class="col-2"></div>
+    <div class="col-5">
+      <h5>Burgers that are Devoured</h5>
+      <ul>
+        {{#each hbsObject}} {{#unless devoured}} {{hbsObject.burger_name}} {{/unless}} {{/each}}
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <button>Devour!</button>
+  </div>
+  <form action="/action_page.php" id="addBurger">
+  </form>
+  <br>
+  <textarea rows="4" cols="50" name="comment" form="addBurger" placeholder="Enter Burger Name"></textarea>
+  <br>
+  <button type="submit">Add Burger</button>
+
+  <p>Enter a burger you want to eat. Click the "Submit" button.</p>
+</div>
