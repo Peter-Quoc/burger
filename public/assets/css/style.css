@@ -1,0 +1,13 @@
+body{
+    text-align: center;
+}
+
+.titleRow {
+    display: center;
+    text-align: center;
+
+}
+
+.toEatList {
+    margin: 3vh;
+}
